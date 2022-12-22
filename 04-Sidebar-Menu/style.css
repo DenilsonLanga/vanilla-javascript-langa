@@ -1,0 +1,149 @@
+@font-face {
+    font-family: "cerapro";
+    src: url("../recursos/font/ceraroundpro-regular.otf");
+}
+@font-face {
+    font-family: "cerapro-bold";
+    src: url("../recursos/font/ceraroundpro-bold.otf");
+}
+
+
+*{
+    box-sizing: 0;
+    margin: 0;
+    font-family: "cerapro";
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    padding: 0 2rem;
+position: relative;
+}
+
+.nav-header{
+    flex-basis: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 4rem;
+}
+
+.nav-btn{
+    background-color: transparent;
+    border: none;
+    font-size: 1.75rem;
+    color: blue;
+    animation: bounce 1.5s infinite;
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.nav-icons{
+    flex-basis: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fa-brands{
+    margin: 0 0.5rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+.fa-youtube{
+    color: red;
+}
+.fa-linkedin{
+    color: blue;
+}
+
+.fa-google{
+    background: -webkit-linear-gradient(red, yellow, green, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu{
+    position: absolute;
+    height: 100vh;
+    max-width: 100vh;
+    width: 0;
+    max-width: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-attachment: fixed;
+    background-color: black;
+    top: 0;
+    transition: .4s;
+}
+
+.show-menu{
+    width: 100vw;
+    max-width: 400px;
+}
+
+.menu-logo{
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+img{
+    width: 200px;
+}
+.menu-exit{
+    background-color: transparent;
+    color: red;
+    font-size: 1.75rem;
+   position: absolute;
+   right: 0%;
+   margin-right: 1rem;
+   cursor: pointer;
+   border: none;
+}
+
+.menu-links{
+    display: flex;
+    flex-direction: column;
+    width: 83%;
+}
+
+.link{
+    text-decoration: none;
+    font-family: "cerapro-bold";
+    padding: 1rem 0;
+    text-align: center;
+    transition: 0.4s;
+}
+.link:hover{
+    color: white;
+    transform: scale(1.2);
+    background-color: aqua;
+}
+
+.menu-icons{
+    margin-bottom: 1.5rem;
+}
+.menu-icon {
+    color: white;
+}

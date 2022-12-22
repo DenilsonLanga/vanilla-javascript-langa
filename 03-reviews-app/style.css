@@ -1,0 +1,191 @@
+@font-face {
+    font-family: "cerapro";
+    src: url("../recursos/font/ceraroundpro-regular.otf");
+}
+@font-face {
+    font-family: "cerapro-bold";
+    src: url("../recursos/font/ceraroundpro-bold.otf");
+}
+*{
+    margin: 0;
+    font-family: "cerapro";
+    box-sizing: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-center{
+    width: 90vw;
+}
+
+.nav-user{
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo{
+    width: 200px;
+}
+.nav-btn{
+    background-color: transparent;
+    color: blue;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    transition: .4s;
+}
+.show-links{
+    height: 276px;
+}
+.nav-link{
+    text-decoration: none;
+    border-top: 1px solid gray;
+    padding: 1.5rem;
+    text-align: center;
+    font-family: "cerapro-bold";
+    transition: .4s;
+}
+.nav-link:hover{
+    color: #ffd700;
+    background-color:green;
+    padding-left: .75rem;
+}
+
+@media screen and (min-width: 992px) {
+    .nav-btn{
+        display: none;
+    }
+    .nav-center{
+        display: flex;
+        align-items: center;
+        height: 6rem;
+    }
+    .navbar{
+        height: 6rem;
+    }
+    .nav-user{
+        margin: 0 4rem;
+    }
+    .nav-links{
+        height: auto;
+        flex-direction: row;
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-link{
+        border: none;
+        font-family: "cerapro-bold";
+    }
+    .nav-link:hover{
+        color: green;
+        background-color: white;
+    }
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 6rem);
+    background: #d9eff7;
+}
+
+.main-header{
+    font-family: "cerapro-bold";
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.under{
+    height: .25rem;
+    width: 4.25rem;
+    background-color: #54cffd;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.people{
+    width: 60vw;
+    max-width: 500px;
+    background-color: white;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-photo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1.25rem;
+    position: relative;
+}
+
+.main-photo img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.main-photo::before{
+    content: "";
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #54cffd;
+    position: absolute;
+    top: -2px;
+    right: -6px;
+}
+
+.name, .job, .info {
+    text-align: center;
+}
+.name{
+    letter-spacing: 4px;
+    font-family: "cerapro-bold";
+}
+.job{
+    color: #54cffd;
+    font-size: 10pt;
+}
+
+.info{
+margin: 1rem 0;
+}
+
+.b-btn, .f-btn{
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #54cffd;
+    cursor: pointer;
+}
+
+.random-btn{
+    margin-top: 1rem;
+    border-radius: 7px;
+    color: #54cffd;
+    border: 1px solid #54cffd;
+    padding: 4px;
+    cursor: pointer;
+}

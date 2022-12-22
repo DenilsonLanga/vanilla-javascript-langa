@@ -1,0 +1,156 @@
+@font-face{
+    font-family: "cerapro";
+src: url("../recursos/font/ceraroundpro-regular.otf");    
+}
+@font-face{
+    font-family: "cerapro-bold";
+src: url("../recursos/font/ceraroundpro-bold.otf");    
+}
+
+*{
+    margin: 0;
+    box-sizing: 0;
+    font-family: "cerapro",'Courier New', Courier, monospace;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-center{
+width: 90vw;
+}
+
+.nav-user{
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    align-items: center;
+}
+
+.nav-logo img{
+    width: 200px;
+}
+
+.nav-btn{
+    background-color: transparent;
+    border: none;
+    color: blue;
+    font-size: 1.5rem;
+    animation: bounce 2s ease infinite;
+    cursor: pointer;
+}
+@keyframes bounce {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: column ;
+    height: 0;
+    overflow: hidden;
+    transition: 0.1s;
+}
+
+.show-nav{
+    height: 344px ;
+}
+.nav-link{
+    padding: 2rem;
+    border-top: 2px solid gray;
+    text-decoration: none;
+    text-align: center;
+    font-family: "cerapro-bold";
+}
+
+.nav-link:hover{
+    color: #ffd700;
+}
+
+@media screen and (min-width: 992px) {
+    .nav-btn{
+        display: none;
+    }
+    .nav-center{
+        display: flex;
+    }
+    .nav-user{
+        margin-right: 4rem;
+    }
+    .nav-links{
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70%;
+    }
+    .nav-link{
+        border: none;
+    }
+    .navbar{
+        height: 6rem;
+    }
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 6rem);
+    background: linear-gradient(45deg, rgba(0,0,255,0.3), rgba(0,255,0,0.3));
+}
+
+.center{
+    width: 90vw;
+}
+
+.counter-info{
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    font-family: "cerapro-bold";
+    color: #123456;
+    text-align: center;
+}
+
+.display{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    font-family: Helvetica, sans-serif    ;
+    font-weight: bold;
+}
+
+
+.buttons{
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn{
+    margin: 0 2rem;
+    padding: 0.25rem;
+    color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+.decrease-btn{
+background-color: red;
+}
+.reset-btn{
+background-color: black;
+}
+.increase-btn{
+background-color: green;
+}
