@@ -34,5 +34,5 @@ hexDOM.className = "color"
 mainDOM.style.backgroundColor = hexCode
 hexDOM.innerHTML = hexCode
 divInfo.appendChild(hexDOM)
-}
+};
 
